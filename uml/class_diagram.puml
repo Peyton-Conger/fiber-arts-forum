@@ -1,0 +1,19 @@
+@startuml
+class User {
+  +id
+  +username
+  +email
+}
+class Thread {
+  +id
+  +title
+  +craft
+}
+class Post {
+  +id
+  +body
+}
+User "1" -- "*" Thread : creates
+Thread "1" -- "*" Post : contains
+User "1" -- "*" Post : writes
+@enduml

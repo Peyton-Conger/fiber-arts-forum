@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1>Threads</h1>
+  <div>
+    <form class="d-flex" method="get" action="{{ url_for('forum.index') }}">
+      <input class="form-control me-2" name="q" placeholder="Search title..." value="{{ request.args.get('q','') }}">
+      <select name="craft" class="form-select me-2">
+        <option value="">All crafts</option>
+        <option>Knitting</option>
+        <option>Crochet</option>
+        <option>Spinning</option>
+        <option>Weaving</option>
+        <option>Felting</option>
+      </select>
+      <button class="btn btn-outline-primary">Search</button>
+    </form>
+  </div>
+  {% if current_user %}
+    <a class="btn btn-primary" href="{{ url_for('forum.new_thread') }}">New Thread</a>
+  {% endif %}
+</div>
+{% if threads %}
+  <div class="list-group">
+    {% for t in threads %}
+      <a class="list-group-item list-group-item-action" href="{{ url_for('forum.view_thread', thread_id=t.id) }}">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ t.title }}</h5>
+          <small class="text-muted">{{ t.craft or 'General' }}</small>
+        </div>
+        <p class="mb-1">By {{ t.user.username }}</p>
+      </a>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No threads yet.</p>
+{% endif %}
+{% endblock %}
