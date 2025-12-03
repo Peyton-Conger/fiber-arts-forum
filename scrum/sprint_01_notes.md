@@ -1,6 +1,6 @@
 Sprint 1 – Planning
 
-Date/Time: 12/01/2025 — 3:00 PM
+Date/Time: 11/30/2025
 Participants: Peyton
 
 Goal Statement:
@@ -29,7 +29,7 @@ Set up testing framework (pytest)
 Create README with user stories and project description
 
 Sprint 1 – Daily Scrum Notes
-12/01/2025 – 3:30 PM
+12/01/2025 
 
 What we did yesterday: N/A (project kickoff)
 What we will do today:
@@ -41,39 +41,38 @@ Add README and starter folders
 Begin authentication pages
 Blockers: None
 
-12/02/2025 – 3:30 PM
+12/01/2025
 
 Completed: Repo created, README drafted
 Today: Work on login/registration flow
 Blockers: Waiting on UI design from Minh
 
-12/03/2025 – 3:30 PM
+12/01/2025
 
 Completed: Registration route functioning
 Today: Login + session handling
 Blockers: None
 
-12/04/2025 – 3:30 PM
+12/01/2025
 
 Completed: Login fully functional
 Today: Build Home + Categories pages
 Blockers: None
 
-12/05/2025 – 3:30 PM
+12/01/2025
 
 Completed: Home page styled, Categories added
 Today: Begin creating UML diagrams
 Blockers: None
 
-12/06/2025 – 3:30 PM
-
+12/01/2025 
 Completed: UML diagrams in progress
 Today: Pytest setup + first tests
 Blockers: None
 
 Sprint 1 – Review
 
-Date/Time: 12/07/2025 — 3:00 PM
+Date/Time: 12/01/2025
 Participants: Entire team
 
 What was completed:
@@ -106,9 +105,9 @@ Improve mobile layout
 
 Add logo or branding badge
 
-🧵 Sprint 1 – Retrospective
+Sprint 1 – Retrospective
 
-Date/Time: 12/07/2025 — 3:30 PM
+Date/Time: 12/01/2025 
 Participants: Whole team
 
 What went well:
